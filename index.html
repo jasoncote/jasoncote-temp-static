@@ -22,10 +22,18 @@
 
   header {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     font-size: 2em;
+    text-align: center;
+  }
+
+  @media  screen and (min-width: 600px) {
+    header {
+      flex-direction: row-reverse;
+      text-align: left;
+    }
   }
 
   p {
